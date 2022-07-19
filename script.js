@@ -28,4 +28,4 @@ $.getJSON(url3, function(r) {
  } 
   $('#rest3').html('<b>Game:</b> '+r.description+'<br><b>Online:</b> '+r.players.online+'/'+r.players.max);
  $('#favicon3').attr('src', r.favicon);
-});  
+});
