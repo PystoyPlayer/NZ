@@ -37,3 +37,23 @@ $.getJSON(url2, function(r2) {
   $('#rest2').html('<b>Players:</b> '+pl2+'.');
  $('#favicon2').attr('src', r2.favicon);  
 });
+
+var url3 = "https://api.minetools.eu/ping/142.132.223.37/25652"; 
+$.getJSON(url3, function(r3) {
+    //data is the JSON string
+ if(r3.error){
+    $('#rest3').html('Server Offline');
+   return false;
+ } 
+  var pl3 = '';
+  if(r3.players.sample.length > 0 ){pl3 = r3.players.sample[0].name;}
+  let i3 = 1;
+  var str3 = '';
+    while (i3 < r3.players.sample.length) {
+      pl3 = str3.concat(pl3,', ', r3.players.sample[i3].name)
+      i3++;
+} 
+ if(r3.players.sample.length == 0 ){pl3 = 'Пусто';  } 
+  $('#rest3').html('<b>Players:</b> '+pl3+'.');
+ $('#favicon3').attr('src', r3.favicon);  
+});
