@@ -15,9 +15,11 @@ body,html{
 body{
   background:url(https://wallpaperaccess.com/full/8084263.jpg) center no-repeat;
   background-size:cover;
+  cursor: crosshair; 
 }
 body:before{
-  content:""; width:100%; height:100%;     background:rgba(0,0,0,0.3);
+  content:""; width:100%; height:100%;     
+  background:rgba(0,0,0,0.3);
   position:absolute;
   top:0;
   left:0;
@@ -132,15 +134,46 @@ h1,h2{
 #rest{
   padding:30px 15px;
   line-height:30px;
-  color:#000d42
+  color:#000d42;
+  height:60px;
 }
 #rest2{
   padding:30px 15px;
   line-height:30px;
-  color:#000d42
+  color:#000d42;
+  height:60px;
 }
 #rest3{
   padding:30px 15px;
   line-height:30px;
-  color:#000d42
+  color:#000d42;
+  height:60px;
+}
+.next{ 
+  position: relative; 
+  left: 50px; 
+  color: white; 
+  padding: 7px 20px; 
+  border-radius: 3px; 
+  font-size: 25px; 
+  cursor: crosshair; 
+  z-index: 1000; 
+  text-decoration: inherit;
+} 
+.next:hover{ 
+  background: rgb(220 53 69 / 50%); 
+}
+.back{ 
+  position: relative; 
+  left: -50px; 
+  color: white; 
+  padding: 7px 20px; 
+  border-radius: 3px; 
+  font-size: 25px; 
+  cursor: crosshair; 
+  z-index: 1000; 
+  text-decoration: inherit;
+} 
+.back:hover{ 
+  background: rgb(220 53 69 / 50%); 
 }
