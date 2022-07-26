@@ -136,18 +136,28 @@ h1,h2{
   line-height:30px;
   color:#000d42;
   height:60px;
+  opacity: 0;
+  animation: ani 2.5s forwards;
 }
 #rest2{
   padding:30px 15px;
   line-height:30px;
   color:#000d42;
   height:60px;
+  opacity: 0;
+  animation: ani 2.5s forwards;
 }
 #rest3{
   padding:30px 15px;
   line-height:30px;
   color:#000d42;
   height:60px;
+  opacity: 0;
+  animation: ani 2.5s forwards;
+}
+@keyframes ani {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
 }
 .next{ 
   position: relative; 
