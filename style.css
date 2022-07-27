@@ -31,7 +31,7 @@ h1,h2{
 }
 .card, .card2, .card3, .card4, .card5, .card6 {
   position: relative;
-  margin: 0 auto;
+  margin: 12;
   padding: 0;
   width: 100px;
   min-width: 300px;
@@ -42,15 +42,6 @@ h1,h2{
           animation: fadein 2s;
   overflow:hidden;
   z-index: 999;
-}
-.card, .card4 {
-  left: -25px;
-}
-.card2, .card5 {
-  left: 0px;
-}
-.card3, .card6 {
-  left: 25px;
 }
 .header {
   position: relative;
@@ -115,7 +106,7 @@ h1,h2{
 }
 .next{ 
   position: relative; 
-  left: 50px; 
+  left: 10px; 
   color: white; 
   padding: 7px 20px; 
   border-radius: 3px; 
@@ -129,7 +120,7 @@ h1,h2{
 }
 .back{ 
   position: relative; 
-  left: -50px; 
+  left: -10px; 
   color: white; 
   padding: 7px 20px; 
   border-radius: 3px; 
