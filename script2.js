@@ -18,7 +18,7 @@ $.getJSON(url, function(r) {
  $('#favicon').attr('src', r.favicon);  
 });
 
-var url2 = "https://api.minetools.eu/ping/5.188.141.184/26378"; 
+var url2 = "https://api.minetools.eu/ping/5.188.141.184/25571"; 
 $.getJSON(url2, function(r2) {
     //data is the JSON string
  if(r2.error){
@@ -58,7 +58,7 @@ $.getJSON(url3, function(r3) {
  $('#favicon3').attr('src', r3.favicon);  
 });
 
-var url4 = "https://api.minetools.eu/ping/"; 
+var url4 = "https://api.minetools.eu/ping/168.119.145.214/25869"; 
 $.getJSON(url4, function(r4) {
     //data is the JSON string
  if(r4.error){
