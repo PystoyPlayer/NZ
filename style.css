@@ -10,7 +10,7 @@ body,html{
   font-size:15px;
   display:flex;
   align-items:center;
-  justify-content:center
+  justify-content:center;
 }
 body{
   background:url(https://wallpaperaccess.com/full/8084263.jpg) center no-repeat;
@@ -23,16 +23,16 @@ body:before{
   position:absolute;
   top:0;
   left:0;
-  z-index:10
+  z-index:10;
 }
 h1,h2{
   font-weight:400;
-  letter-spacing:1px
+  letter-spacing:1px;
 }
 .card, .card2, .card3, .card4, .card5, .card6 {
   position: relative;
   margin: 12;
-  padding: 0;
+  padding: 0 auto;
   width: 100px;
   min-width: 300px;
   background: #ffffff;
@@ -51,7 +51,8 @@ h1,h2{
 }
 .card img, .card2 img, .card3 img, .card4 img, .card5 img, .card6 img{
   width:100%;
-  z-index:0
+  transition: all 1s ease;
+  z-index:0;
 }
 .image {
   width: 100%;
