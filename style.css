@@ -101,7 +101,7 @@ h1,h2{
   opacity: 0;
   animation: ani 2.5s forwards;
 }
-#rest,#rest2,#rest3,#rest4,#rest5,#rest6{
+#rest, #rest2, #rest3, #rest4, #rest5, #rest6 {
   padding:30px 15px;
   line-height:30px;
   color:#000d42;
