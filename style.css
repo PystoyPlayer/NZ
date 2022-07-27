@@ -45,12 +45,15 @@ h1,h2{
 }
 .card,.card4 {
   left: -25px;
+  min-width: 300px;
 }
 .card2,.card5 {
   left: 0px;
+  min-width: 300px;
 }
 .card3,.card6 {
   left: 25px;
+  min-width: 300px;
 }
 .header {
   position: relative;
