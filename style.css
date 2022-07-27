@@ -43,22 +43,13 @@ h1,h2{
   overflow:hidden;
   z-index: 999;
 }
-.card {
+.card.card4 {
   left: -25px;
 }
-.card2 {
+.card2.card5 {
   left: 0px;
 }
-.card3 {
-  left: 25px;
-}
-.card4 {
-  left: -25px;
-}
-.card5 {
-  left: 0px;
-}
-.card6 {
+.card3.card6 {
   left: 25px;
 }
 .header {
