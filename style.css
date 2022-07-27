@@ -29,7 +29,7 @@ h1,h2{
   font-weight:400;
   letter-spacing:1px
 }
-.card,.card2,.card3,.card4,.card5,.card6{
+.card .card2 .card3 .card4 .card5 .card6{
   position: relative;
   margin: 0 auto;
   padding: 0;
@@ -43,17 +43,14 @@ h1,h2{
   overflow:hidden;
   z-index: 999;
 }
-.card,.card4 {
+.card .card4 {
   left: -25px;
-  min-width: 300px;
 }
-.card2,.card5 {
+.card2 .card5 {
   left: 0px;
-  min-width: 300px;
 }
-.card3,.card6 {
+.card3 .card6 {
   left: 25px;
-  min-width: 300px;
 }
 .header {
   position: relative;
@@ -63,7 +60,7 @@ h1,h2{
   box-shadow:0 4px 3px #0002;
   overflow: hidden;
 }
-.card,.card2,.card3,.card4,.card5,.card6 img{
+.card .card2 .card3 .card4 .card5 .card6 img{
   width:100%;
   transition: all 1s ease;
   z-index:0
