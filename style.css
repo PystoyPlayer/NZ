@@ -60,7 +60,7 @@ h1,h2{
   box-shadow:0 4px 3px #0002;
   overflow: hidden;
 }
-.card, .card2, .card3, .card4, .card5, .card6 img{
+.card img, .card2 img, .card3 img, .card4 img, .card5 img, .card6 img{
   width:100%;
   transition: all 1s ease;
   z-index:0
