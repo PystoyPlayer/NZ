@@ -8,7 +8,7 @@ var url = "https://api.minetools.eu/ping/168.119.145.214/25612";
  $('#favicon').attr('src', r.favicon);  
 });
 
-var url2 = "https://api.minetools.eu/ping/5.188.141.184/26378"; 
+var url2 = "https://api.minetools.eu/ping/5.188.141.184/25571"; 
 $.getJSON(url2, function(r) {
     //data is the JSON string
  if(r.error){
@@ -30,7 +30,7 @@ $.getJSON(url3, function(r) {
  $('#favicon3').attr('src', r.favicon);
 });
 
-var url4 = "https://api.minetools.eu/ping/"; 
+var url4 = "https://api.minetools.eu/ping/168.119.145.214/25869"; 
  $.getJSON(url4, function(r) {
  if(r.error){
     $('#rest4').html('Server Offline');
