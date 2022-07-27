@@ -29,3 +29,35 @@ $.getJSON(url3, function(r) {
   $('#rest3').html('<b>Game:</b> '+r.description+'<br><b>Online:</b> '+r.players.online+'/'+r.players.max);
  $('#favicon3').attr('src', r.favicon);
 });
+
+var url4 = "https://api.minetools.eu/ping/"; 
+ $.getJSON(url4, function(r) {
+ if(r.error){
+    $('#rest4').html('Server Offline');
+   return false;
+ } 
+  $('#rest4').html('<b>Game:</b> '+r.description+'<br><b>Online:</b> '+r.players.online+'/'+r.players.max);
+ $('#favicon4').attr('src', r.favicon);  
+});
+
+var url5 = "https://api.minetools.eu/ping/"; 
+$.getJSON(url5, function(r) {
+    //data is the JSON string
+ if(r.error){
+    $('#rest5').html('Server Offline');
+   return false;
+ } 
+  $('#rest5').html('<b>Game:</b> '+r.description+'<br><b>Online:</b> '+r.players.online+'/'+r.players.max);
+ $('#favicon5').attr('src', r.favicon);
+}); 
+
+var url6 = "https://api.minetools.eu/ping/"; 
+$.getJSON(url6, function(r) {
+    //data is the JSON string
+ if(r.error){
+    $('#rest6').html('Server Offline');
+   return false;
+ } 
+  $('#rest6').html('<b>Game:</b> '+r.description+'<br><b>Online:</b> '+r.players.online+'/'+r.players.max);
+ $('#favicon6').attr('src', r.favicon);
+});
