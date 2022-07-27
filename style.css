@@ -87,8 +87,6 @@ h1,h2{
   border:3px solid #fff;
   box-shadow:0 4px 3px #0002;
   z-index:9;
-  opacity: 0;
-  animation: ani 2.5s forwards;
 }
 #rest, #rest2, #rest3, #rest4, #rest5, #rest6 {
   padding:30px 15px;
