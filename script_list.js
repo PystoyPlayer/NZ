@@ -57,3 +57,64 @@ $.getJSON(url3, function(r3) {
   $('#rest3').html('<b>Players:</b> '+pl3+'.');
  $('#favicon3').attr('src', r3.favicon);  
 });
+
+var url4 = "https://api.minetools.eu/ping/"; 
+$.getJSON(url4, function(r4) {
+    //data is the JSON string
+ if(r4.error){
+    $('#rest4').html('Server Offline');
+   return false;
+ } 
+  var pl4 = '';
+  if(r4.players.sample.length > 0 ){pl4 = r4.players.sample[0].name;};
+  let i4 = 1;
+  var str4 = '';
+    while (i4 < r4.players.sample.length) {
+      pl3 = str.concat(pl4,', ', r4.players.sample[i].name)
+      i4++;
+}
+ if(r4.players.sample.length == 0 ){ pl4 = 'Пусто';  } 
+  $('#rest4').html('<b>Players:</b> '+pl4+'.');
+ $('#favicon4').attr('src', r4.favicon);  
+});
+
+var url5 = "https://api.minetools.eu/ping/"; 
+$.getJSON(url5, function(r5) {
+    //data is the JSON string
+ if(r5.error){
+    $('#rest5').html('Server Offline');
+   return false;
+ } 
+  var pl5 = '';
+  if(r5.players.sample.length > 0 ){pl5 = r5.players.sample[0].name;}
+  let i5 = 1;
+  var str5 = '';
+    while (i5 < r5.players.sample.length) {
+      pl5 = str5.concat(pl2,', ', r5.players.sample[i5].name)
+      i5++;
+} 
+ if(r5.players.sample.length == 0 ){pl5 = 'Пусто';  } 
+  $('#rest5').html('<b>Players:</b> '+pl5+'.');
+ $('#favicon5').attr('src', r5.favicon);  
+});
+
+var url6 = "https://api.minetools.eu/ping/"; 
+$.getJSON(url6, function(r6) {
+    //data is the JSON string
+ if(r6.error){
+    $('#rest6').html('Server Offline');
+   return false;
+ } 
+  var pl6 = '';
+  if(r6.players.sample.length > 0 ){pl6 = r6.players.sample[0].name;}
+  let i6 = 1;
+  var str6 = '';
+    while (i6 < r6.players.sample.length) {
+      pl6 = str6.concat(pl6,', ', r6.players.sample[i6].name)
+      i6++;
+} 
+ if(r6.players.sample.length == 0 ){pl6 = 'Пусто';  } 
+  $('#rest6').html('<b>Players:</b> '+pl6+'.');
+ $('#favicon6').attr('src', r6.favicon);  
+});
+
