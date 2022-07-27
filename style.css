@@ -29,7 +29,7 @@ h1,h2{
   font-weight:400;
   letter-spacing:1px
 }
-.card* {
+.card * {
   position: relative;
   margin: 0 auto;
   padding: 0;
@@ -60,7 +60,7 @@ h1,h2{
   box-shadow:0 4px 3px #0002;
   overflow: hidden;
 }
-.card* img{
+.card * img{
   width:100%;
   transition: all 1s ease;
   z-index:0
@@ -101,7 +101,7 @@ h1,h2{
   opacity: 0;
   animation: ani 2.5s forwards;
 }
-#rest*{
+#rest * {
   padding:30px 15px;
   min-width: 300px;
   line-height:30px;
