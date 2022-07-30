@@ -70,7 +70,7 @@ $.getJSON(url4, function(r4) {
   let i4 = 1;
   var str4 = '';
     while (i4 < r4.players.sample.length) {
-      pl3 = str.concat(pl4,', ', r4.players.sample[i].name)
+      pl4 = str.concat(pl4,', ', r4.players.sample[i].name)
       i4++;
 }
  if(r4.players.sample.length == 0 ){ pl4 = 'Пусто';  } 
