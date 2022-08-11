@@ -138,4 +138,5 @@ footer {
     right:35%;
     left:50%;
     margin-left:-150px;
+    z-index:1000;
 }
