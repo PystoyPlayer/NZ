@@ -12,27 +12,28 @@
             align-items: center;
             height: 100vh;
             margin: 0;
-            background: linear-gradient(to right, #434343, #000000);
-            color: #fff;
+            background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+            color: #ffffff;
         }
         .container {
             text-align: center;
             background: rgba(255, 255, 255, 0.1);
-            padding: 30px 40px;
+            padding: 40px 50px;
             border-radius: 15px;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-            max-width: 600px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+            max-width: 700px;
             margin: 0 20px;
         }
         .container h1 {
             color: #00E676;
             margin-bottom: 20px;
             font-size: 2.5em;
+            letter-spacing: 1px;
         }
         .container p {
-            font-size: 1.4em;
+            font-size: 1.3em;
             margin: 15px 0;
-            line-height: 1.6;
+            line-height: 1.8;
         }
         .container p strong {
             color: #FF3D00;
@@ -74,7 +75,7 @@
 
             document.getElementById('instructions').style.display = 'block';
         } else {
-            document.body.innerText = 'DDL parameter is missing in the URL';
+            document.body.innerText = 'Параметр DDL отсутствует в URL';
         }
     </script>
 </body>
