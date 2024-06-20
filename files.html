@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download</title>
+</head>
+<body>
+    <script>
+        // Функция для получения параметров из URL
+        function getQueryParams() {
+            const params = {};
+            const queryString = window.location.search;
+            const urlParams = new URLSearchParams(queryString);
+            urlParams.forEach((value, key) => {
+                params[key] = value;
+            });
+            return params;
+        }
+
+        // Получаем параметры из URL
+        const params = getQueryParams();
+
+        // Проверяем наличие параметра ddl
+        if (params.ddl) {
+            const fileName = params.ddl;
+            const downloadUrl = `https://raw.githubusercontent.com/PystoyPlayer/NZ/files/${fileName}.zip`;
+
+            // Создаем скрытую ссылку для скачивания
+            const link = document.createElement('a');
+            link.href = downloadUrl;
+            link.download = fileName + '.zip';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        } else {
+            // Если параметр ddl отсутствует, отображаем сообщение об ошибке
+            document.body.innerText = 'DDL parameter is missing in the URL';
+        }
+    </script>
+</body>
+</html>
