@@ -4,10 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Download</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        .container {
+            text-align: center;
+            background: white;
+            padding: 20px 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .container h1 {
+            color: #4CAF50;
+            margin-bottom: 20px;
+        }
+        .container p {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+        .container p strong {
+            color: #FF5722;
+        }
+    </style>
 </head>
 <body>
+    <div class="container" id="instructions">
+        <h1>Спасибо за скачивание!</h1>
+        <p>Пожалуйста, следуйте этим инструкциям для установки:</p>
+        <p><strong>Шаг 1:</strong> Распакуйте архив.</p>
+        <p><strong>Шаг 2:</strong> Перенесите все папки из архива в вашу игру.</p>
+        <p><strong>Шаг 3:</strong> Если в сборке есть ресурспак - активируйте его.</p>
+        <p><strong>Шаг 4:</strong> Если у вас уже стояла сборка для другого режима, полностью замените папки. Для каждого режима нужны свои моды, конфиги и т.п.</p>
+    </div>
+
     <script>
-        // Функция для получения параметров из URL
         function getQueryParams() {
             const params = {};
             const queryString = window.location.search;
@@ -18,23 +56,21 @@
             return params;
         }
 
-        // Получаем параметры из URL
         const params = getQueryParams();
 
-        // Проверяем наличие параметра ddl
         if (params.ddl) {
             const fileName = params.ddl;
             const downloadUrl = `https://raw.githubusercontent.com/PystoyPlayer/NZ/files/${fileName}.zip`;
 
-            // Создаем скрытую ссылку для скачивания
             const link = document.createElement('a');
             link.href = downloadUrl;
             link.download = fileName + '.zip';
             document.body.appendChild(link);
             link.click();
             document.body.removeChild(link);
+
+            document.getElementById('instructions').style.display = 'block';
         } else {
-            // Если параметр ddl отсутствует, отображаем сообщение об ошибке
             document.body.innerText = 'DDL parameter is missing in the URL';
         }
     </script>
