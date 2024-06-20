@@ -1,4 +1,4 @@
-var url = "https://api.minetools.eu/ping/168.119.145.214/25612"; 
+var url = "https://api.minetools.eu/ping/57.129.13.63/30046"; 
  $.getJSON(url, function(r) {
  if(r.error){
     $('#rest').html('Server Offline');
