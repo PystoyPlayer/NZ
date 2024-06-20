@@ -21,6 +21,8 @@
             padding: 30px 40px;
             border-radius: 15px;
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            max-width: 600px;
+            margin: 0 20px;
         }
         .container h1 {
             color: #00E676;
@@ -35,20 +37,6 @@
         .container p strong {
             color: #FF3D00;
         }
-        .container a {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 10px 20px;
-            font-size: 1.2em;
-            color: #fff;
-            background: #00E676;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: background 0.3s;
-        }
-        .container a:hover {
-            background: #00C853;
-        }
     </style>
 </head>
 <body>
@@ -60,6 +48,7 @@
         <p><strong>Шаг 3:</strong> Если в сборке есть ресурспак - активируйте его.</p>
         <p><strong>Шаг 4:</strong> Если у вас уже стояла сборка для другого режима, полностью замените папки. Для каждого режима нужны свои моды, конфиги и т.п.</p>
     </div>
+
     <script>
         function getQueryParams() {
             const params = {};
@@ -77,14 +66,14 @@
             const fileName = params.ddl;
             const downloadUrl = `https://raw.githubusercontent.com/PystoyPlayer/NZ/files/${fileName}.zip`;
 
-            const link = document.getElementById('downloadLink');
+            const link = document.createElement('a');
             link.href = downloadUrl;
             link.download = fileName + '.zip';
-            link.addEventListener('click', function() {
-                setTimeout(() => {
-                    document.getElementById('instructions').style.display = 'block';
-                }, 1000);
-            });
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+
+            document.getElementById('instructions').style.display = 'block';
         } else {
             document.body.innerText = 'DDL parameter is missing in the URL';
         }
