@@ -13,7 +13,7 @@ body,html{
   justify-content:center;
 }
 body{
-  background:url(https://wallpaperaccess.com/full/8084263.jpg) center no-repeat;
+  background:url('background.png') center no-repeat;
   background-size:cover;
   cursor: crosshair; 
 }
